@@ -120,9 +120,10 @@ jobs:
       - name: Configure AWS credentials from AWS account
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: ${{ secrets.AWS_ROLE }}
-          aws-region: ${{ secrets.AWS_REGION }}
-          role-session-name: GERRARDROSE-TERRAFORM-DEVELOPMENT-ORG1
+          env:
+            role-to-assume: ${{ secrets.AWS_ROLE }}
+            aws-region: ${{ secrets.AWS_REGION }}
+            role-session-name: GERRARDROSE-TERRAFORM-DEVELOPMENT-ORG1
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
