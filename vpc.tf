@@ -2,7 +2,7 @@
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
 
-  name = "Org1 ${terraform.environment}"
+  name = "Org1 VPC"
   cidr = var.vpc_cidr
 
   azs             = var.azs
@@ -14,7 +14,6 @@ module "vpc" {
 
   tags = {
     Terraform = "true"
-    Environment = "${terraform.environment}"
   }
 
 }
