@@ -203,7 +203,7 @@ jobs:
 
   deploy_to_staging:
     runs-on: ubuntu-latest
-    needs: deploy_to_staging
+    needs: deploy_to_development
     environment: staging
     env:
       ENV: staging
@@ -297,7 +297,7 @@ jobs:
 
   deploy_to_production:
     runs-on: ubuntu-latest
-    needs: deploy_to_development
+    needs: deploy_to_staging
     environment: production
     env:
       ENV: production
