@@ -2,7 +2,7 @@
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
 
-  name = "org1-vpc2"
+  name = "org1-vpc3"
   cidr = var.vpc_cidr
 
   azs             = var.azs
