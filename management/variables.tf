@@ -17,3 +17,11 @@ variable "private_subnets" {
 variable "public_subnets" {
   type = list
 }
+
+variable "ami" {
+  type = string
+}
+
+variable "key_name" {
+  type = string
+}
