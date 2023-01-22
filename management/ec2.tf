@@ -1,5 +1,7 @@
 module "ec2" {
   source	= "../modules/ec2"
+  ami = var.ami
+  key_name = var.key_name
 #  aws_region	= var.aws_region
 #  vpc_cidr      = var.vpc_cidr
 #  azs             = var.azs
