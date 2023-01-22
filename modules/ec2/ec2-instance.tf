@@ -3,4 +3,5 @@ module "ec2-instance" {
   version = "4.3.0"
 
   instance_type = "t2.micro"
+  ami = "ami-0c68b55d1c875067e"
 }
