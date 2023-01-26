@@ -1,11 +1,34 @@
 aws_region="eu-west-1"
 
 # VPC variables
-vpc_cidr="10.0.0.0/16"
-azs=["eu-west-1a", "eu-west-1b", "eu-west-1c"]
-private_subnets=["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
-public_subnets=["10.0.101.0/24", "10.0.102.0/24", "10.0.103.0/24"]
+vpc_name="management-vpc"
+igw_name="management-vpc-igw"
+vpc_cidr_block="10.0.0.0/16"
+public_subnet_1_cidr_block="10.0.1.0/24"
+public_subnet_2_cidr_block="10.0.2.0/24"
+public_subnet_3_cidr_block="10.0.3.0/24"
+private_subnet_1_cidr_block="10.0.101.0/24"
+private_subnet_2_cidr_block="10.0.102.0/24"
+private_subnet_3_cidr_block="10.0.103.0/24"
+public_subnet_1_name="public-subnet-1"
+public_subnet_2_name="public-subnet-2"
+public_subnet_3_name="public-subnet-3"
+private_subnet_1_name="private-subnet-1"
+private_subnet_2_name="private-subnet-2"
+private_subnet_3_name="private-subnet-3"
+public_subnet_1_az="eu-west-1a"
+public_subnet_2_az="eu-west-1b"
+public_subnet_3_az="eu-west-1c"
+private_subnet_1_az="eu-west-1a"
+private_subnet_2_az="eu-west-1b"
+private_subnet_3_az="eu-west-1c"
+public_rt_name="public-rt"
+private_1_rt_name="private-rt-1"
+private_2_rt_name="private-rt-2"
+private_3_rt_name="private-rt-3"
 
 # EC2 variables
-ami="ami-0c68b55d1c875067e"
+ec2_instance_type="t2.micro"
+ec2_instance_name="management-server"
+ec2_security_group_name="management-server-sg"
 key_name="org1-management-key"
