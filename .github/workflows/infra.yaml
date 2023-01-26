@@ -31,7 +31,7 @@ jobs:
         with:
           role-to-assume: ${{ secrets.AWS_ROLE }}
           aws-region: ${{ secrets.AWS_REGION }}
-          role-session-name: GERRARDROSE-TERRAFORM-ORG1
+          role-session-name: ${{ github.run_id }}
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
@@ -124,7 +124,7 @@ jobs:
         with:
           role-to-assume: ${{ secrets.AWS_ROLE }}
           aws-region: ${{ secrets.AWS_REGION }}
-          role-session-name: GERRARDROSE-TERRAFORM-ORG1
+          role-session-name: ${{ github.run_id }}
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
@@ -218,7 +218,7 @@ jobs:
         with:
           role-to-assume: ${{ secrets.AWS_ROLE }}
           aws-region: ${{ secrets.AWS_REGION }}
-          role-session-name: GERRARDROSE-TERRAFORM-ORG1
+          role-session-name: ${{ github.run_id }}
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
@@ -312,7 +312,7 @@ jobs:
         with:
           role-to-assume: ${{ secrets.AWS_ROLE }}
           aws-region: ${{ secrets.AWS_REGION }}
-          role-session-name: GERRARDROSE-TERRAFORM-ORG1
+          role-session-name: ${{ github.run_id }}
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
