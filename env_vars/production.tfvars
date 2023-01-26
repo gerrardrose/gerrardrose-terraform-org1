@@ -1,7 +1,34 @@
 aws_region="eu-west-1"
 
-vpc_cidr="10.30.0.0/16"
+# VPC variables
+vpc_name="production-vpc"
+igw_name="production-vpc-igw"
+vpc_cidr_block="10.30.0.0/16"
+public_subnet_1_cidr_block="10.30.1.0/24"
+public_subnet_2_cidr_block="10.30.2.0/24"
+public_subnet_3_cidr_block="10.30.3.0/24"
+private_subnet_1_cidr_block="10.30.101.0/24"
+private_subnet_2_cidr_block="10.30.102.0/24"
+private_subnet_3_cidr_block="10.30.103.0/24"
+public_subnet_1_name="public-subnet-1"
+public_subnet_2_name="public-subnet-2"
+public_subnet_3_name="public-subnet-3"
+private_subnet_1_name="private-subnet-1"
+private_subnet_2_name="private-subnet-2"
+private_subnet_3_name="private-subnet-3"
+public_subnet_1_az="eu-west-1a"
+public_subnet_2_az="eu-west-1b"
+public_subnet_3_az="eu-west-1c"
+private_subnet_1_az="eu-west-1a"
+private_subnet_2_az="eu-west-1b"
+private_subnet_3_az="eu-west-1c"
+public_rt_name="public-rt"
+private_1_rt_name="private-rt-1"
+private_2_rt_name="private-rt-2"
+private_3_rt_name="private-rt-3"
 
-azs=["eu-west-1a", "eu-west-1b", "eu-west-1c"]
-private_subnets=["10.30.1.0/24", "10.30.2.0/24", "10.30.3.0/24"]
-public_subnets=["10.30.101.0/24", "10.30.102.0/24", "10.30.103.0/24"]
+# EC2 variables
+ec2_instance_type="t2.micro"
+ec2_instance_name="production-server"
+ec2_security_group_name="production-server-sg"
+key_name="org1-production-key"
