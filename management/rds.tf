@@ -4,7 +4,6 @@ module "rds" {
   engine_version  = "postgres"
   database_port = "5432"
   instance_class = "db.t3.micro"
-  db_parameter_group = postgres13
+  db_parameter_group = default.postgres13
   vpc_id = module.aws_vpc.vpc_id
-
 }
